@@ -8,43 +8,43 @@ public class AddressBuilder {
         Scanner scanner = new Scanner(System.in);
 
         //Name
-        System.out.println("First name: ");
+        System.out.print("First name: ");
         String firstName = scanner.nextLine().trim() + " ";
-        System.out.println("Last name: ");
+        System.out.print("Last name: ");
         String lastName = scanner.nextLine() + "\n";
 
         String fullName = firstName + lastName;
-        stringBuilder.append("Full name: ");
+        stringBuilder.append("\n");
         stringBuilder.append(fullName);
         stringBuilder.append("\n");
 
         //Billing street
-        System.out.println("Billing street: ");
+        System.out.print("Billing street: ");
         String billStreet = scanner.nextLine() + "\n";
-        System.out.println("Billing city: ");
+        System.out.print("Billing city: ");
         String billCity = scanner.nextLine().trim() + ", ";
-        System.out.println("Billing state: ");
+        System.out.print("Billing state: ");
         String billState = scanner.nextLine().trim().toUpperCase() + " ";
-        System.out.println("Billing zip: ");
-        String billZip = scanner.nextLine().trim() + "\n";
+        System.out.print("Billing zip: ");
+        String billZip = scanner.nextLine().trim() + "\n\n";
 
-        stringBuilder.append("Billing Address: ");
+        stringBuilder.append("Billing Address: \n");
         stringBuilder.append(billStreet);
         stringBuilder.append(billCity);
         stringBuilder.append(billState);
         stringBuilder.append(billZip);
 
         //Shipping street
-        System.out.println("Shipping street: ");
+        System.out.print("Shipping street: ");
         String shipStreet = scanner.nextLine() + "\n";
-        System.out.println("Shipping city: ");
+        System.out.print("Shipping city: ");
         String shipCity = scanner.nextLine().trim() + ", ";
-        System.out.println("Shipping state: ");
+        System.out.print("Shipping state: ");
         String shipState = scanner.nextLine().trim().toUpperCase() + " ";
-        System.out.println("Shipping zip: ");
-        String shipZip = scanner.nextLine().trim() + "\n";
+        System.out.print("Shipping zip: ");
+        String shipZip = scanner.nextLine().trim() + "\n\n";
 
-        stringBuilder.append("Billing Address: ");
+        stringBuilder.append("Shipping Address: \n");
         stringBuilder.append(shipStreet);
         stringBuilder.append(shipCity);
         stringBuilder.append(shipState);
